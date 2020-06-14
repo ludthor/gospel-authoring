@@ -11,3 +11,10 @@ At this point this project is built on two files:
 
 2. script.ipynb: The main script. It loads the CSVs, merge them in one only file. Also, creates the flow for the training using the fast.ai built-in functions. 
 
+The first iteration of the training was completed with results:
+A lot of work is needed here for improvements.
+_______________________________
+train_loss: 0.692559
+valid_loss: 0.673879
+accuracy: 0.593023
+_______________________________
