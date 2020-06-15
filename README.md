@@ -18,3 +18,29 @@ train_loss: 0.692559
 valid_loss: 0.673879
 accuracy: 0.593023
 _______________________________
+
+- 15/06/2020
+
+Parametric optimization: I adjusted the batch_size to 16
+                         Changed the optimizer for RMSProp
+                         Changed the learning rate to a slice [1e-3 : 1e-2] 
+                         Changed the loss Function to Cross Entropy
+                         
+Balance the dataset by sampling to 170 observation per book.
+
+Plot the confusion matrix
+
+Display a sample of the prediction using learn.show_results()
+
+Test on Specific data: Fragments of "Acts of the apostles" and "First Epistle of John" -> Test succesful
+
+Troubles: I'm starting to see the fact that the trhee first gospels (Matthew, Mark, Luke) have a common origin. Mark got a little amount of predictions and Matthew and Mark fragmenst are usually false attributed to Luke. This effect was reduced a bit using the balance samplig at the begining. 
+
+Last epoch metrics:
+________________________________
+train_loss: 1.328234
+valid_loss: 1.292800
+accuracy: 0.411765
+________________________________
+
+*Note: In some other rounds of training, I got near 46% accuracy results.
